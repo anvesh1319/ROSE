@@ -1,0 +1,481 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Neeraja ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pink: #ff91c8;
+    --light: #ffe5f2;
+    --purple: #311044;
+}
+
+body {
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(
+        135deg, #170b2b, #57144f, #a52f75, #351044
+    );
+    background-size: 300% 300%;
+    animation: backgroundGlow 12s ease infinite;
+    overflow-x: hidden;
+}
+
+.page {
+    display: none;
+    min-height: 100vh;
+    padding: 40px 20px 115px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page.active {
+    display: flex;
+    animation: pageEnter 0.8s ease;
+}
+
+h1 {
+    font-size: clamp(2.3rem, 7vw, 4.6rem);
+    color: var(--light);
+    text-shadow: 0 0 12px #ff5bab, 0 0 35px #ff168a;
+    margin: 20px 0;
+}
+
+h2 {
+    color: #ffc4e2;
+    margin: 16px 0;
+}
+
+p {
+    max-width: 720px;
+    font-size: 1.08rem;
+    line-height: 1.9;
+    margin: 12px auto;
+}
+
+.heart {
+    font-size: 76px;
+    filter: drop-shadow(0 0 20px #ff68b6);
+    animation: heartbeat 1.3s infinite;
+}
+
+.cake {
+    font-size: 85px;
+    animation: bounce 2s infinite;
+}
+
+.card {
+    width: min(92%, 680px);
+    padding: 28px;
+    margin: 14px auto;
+    background: rgba(255,255,255,0.09);
+    border: 1px solid rgba(255,210,238,0.35);
+    border-radius: 25px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 30px rgba(255,85,180,0.16);
+}
+
+.quote {
+    font-size: clamp(1.15rem, 3.5vw, 1.65rem);
+    font-style: italic;
+    color: #ffe1f0;
+}
+
+button {
+    color: #7a174e;
+    background: linear-gradient(135deg, #fff4fa, #ff9dcc);
+    border: none;
+    border-radius: 35px;
+    padding: 13px 22px;
+    margin: 9px 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 0 18px #ff72b955;
+    transition: transform .25s, box-shadow .25s;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 0 25px #ff9dcc;
+}
+
+.navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 8px 5px;
+    background: rgba(24, 7, 34, .85);
+    backdrop-filter: blur(10px);
+}
+
+.navigation button {
+    padding: 10px 13px;
+    font-size: .9rem;
+}
+
+.small {
+    color: #ffd2e9;
+    font-size: .92rem;
+}
+
+.floating {
+    position: fixed;
+    bottom: -50px;
+    z-index: 0;
+    pointer-events: none;
+    animation: floatUp linear forwards;
+}
+
+.page > * {
+    position: relative;
+    z-index: 1;
+}
+
+#surprise {
+    display: none;
+    animation: pageEnter 1s ease;
+}
+
+.love-letter {
+    text-align: left;
+}
+
+.love-letter p {
+    margin: 15px auto;
+}
+
+.star {
+    display: inline-block;
+    animation: twinkle 1.8s infinite alternate;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.18); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.1); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-13px); }
+}
+
+@keyframes pageEnter {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-115vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes backgroundGlow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+@keyframes twinkle {
+    from { opacity: .4; transform: scale(.85); }
+    to { opacity: 1; transform: scale(1.2); }
+}
+
+@media (max-width: 480px) {
+    .card { padding: 22px 16px; }
+    .navigation button {
+        padding: 9px 10px;
+        margin: 3px 1px;
+        font-size: .78rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<section class="page active" id="page1">
+    <div class="heart">❤️</div>
+    <p>✨ TODAY IS ALL ABOUT YOU ✨</p>
+
+    <h1>Happy Birthday,<br>Neeraja! 🎂</h1>
+
+    <div class="cake">🎂</div>
+
+    <div class="card">
+        <p class="quote">
+            "The world became more beautiful
+            on the day you were born." 💗
+        </p>
+
+        <p>
+            Today is the birthday of my favorite girl,
+            my sweetest thought, and the person who
+            makes ordinary moments feel magical.
+        </p>
+
+        <p><strong>Today, every heartbeat celebrates you. ❤️</strong></p>
+    </div>
+
+    <button onclick="goToPage(2)">
+        Begin Your Surprise 💌
+    </button>
+
+    <p class="small">Made with love, especially for Neeraja 💖</p>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page" id="page2">
+    <div class="heart">💖</div>
+    <h1>For You, Neeraja</h1>
+    <p>Three little reminders of how special you are. 🌹</p>
+
+    <div class="card">
+        <p class="quote">
+            "If I had a thousand chances to choose,
+            my heart would find you every single time."
+        </p>
+        <p>Because no one else could ever be you. 💕</p>
+    </div>
+
+    <div class="card">
+        <p class="quote">
+            "You are my favorite notification,
+            my happiest thought, and my sweetest hello."
+        </p>
+    </div>
+
+    <div class="card">
+        <p class="quote">
+            "I don't need a perfect world.
+            I just want beautiful moments with you."
+        </p>
+    </div>
+
+    <button onclick="goToPage(1)">⬅ Home</button>
+    <button onclick="goToPage(3)">A Letter for You 💌</button>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page" id="page3">
+    <div class="heart">💌</div>
+    <h1>Dear Neeraja...</h1>
+
+    <div class="card love-letter">
+        <h2>My Dearest Neeraja, ❤️</h2>
+
+        <p>
+            On your birthday, I want you to know something:
+            you are more precious than words can explain.
+        </p>
+
+        <p>
+            Your smile can brighten a difficult day.
+            Your presence can turn a simple moment into
+            a memory worth keeping. And the little things
+            about you are often the things I treasure most.
+        </p>
+
+        <p>
+            I hope this new year of your life brings you
+            courage to follow your dreams, peace when life
+            feels difficult, and countless reasons to smile.
+        </p>
+
+        <p>
+            I may not have the fanciest gifts in the world,
+            but I hope I can give you something meaningful:
+            kindness, honesty, laughter, and love that shows
+            up in the little things.
+        </p>
+
+        <p class="quote">
+            "You deserve a love that makes you feel valued,
+            a life that makes you feel proud, and happiness
+            that finds you again and again." 🌷
+        </p>
+
+        <h2>Happy Birthday, My Special Girl! 💋</h2>
+        <p>With love, today and always. ❤️</p>
+    </div>
+
+    <button onclick="goToPage(2)">⬅ Quotes</button>
+    <button onclick="goToPage(4)">Our Forever Story ✨</button>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page" id="page4">
+    <div class="heart">💞</div>
+    <h1>Our Forever Story</h1>
+
+    <div class="card">
+        <span class="star">✨</span>
+        <h2>A Little Promise</h2>
+        <p class="quote">
+            "May we keep collecting little moments
+            that turn into our favorite memories."
+        </p>
+    </div>
+
+    <div class="card">
+        <span class="star">🌙</span>
+        <h2>On Difficult Days</h2>
+        <p class="quote">
+            "Love isn't about having perfect days.
+            It's about caring for each other
+            when the days aren't perfect."
+        </p>
+    </div>
+
+    <div class="card">
+        <span class="star">💖</span>
+        <h2>For All Your Tomorrows</h2>
+        <p class="quote">
+            "Wherever life takes you,
+            I hope it brings you closer to your dreams
+            and gives you a thousand reasons to smile."
+        </p>
+    </div>
+
+    <button onclick="goToPage(3)">⬅ My Letter</button>
+    <button onclick="goToPage(5)">Your Final Surprise 🎁</button>
+</section>
+
+<!-- PAGE 5 -->
+<section class="page" id="page5">
+    <div class="heart">💝</div>
+    <h1>One Last Surprise...</h1>
+
+    <div class="card">
+        <div class="cake">🎂</div>
+
+        <p class="quote">
+            "Of all the beautiful things in this world,
+            getting to know you is one of my favorites."
+        </p>
+
+        <p>
+            Neeraja, close your eyes for a second,
+            make a birthday wish, and tap below. 💗
+        </p>
+
+        <button onclick="revealSurprise()">
+            Tap for Your Special Message 💋
+        </button>
+
+        <div id="surprise">
+            <div style="font-size:65px;margin:20px 0">
+                💐 💖 🎂 💖 💐
+            </div>
+
+            <h2>To My Beautiful Neeraja 👑</h2>
+
+            <p>
+                May your life be filled with the love you deserve,
+                the adventures you dream of, the friends who
+                cherish you, and the happiness you give to others.
+            </p>
+
+            <p class="quote">
+                "You are a beautiful soul, a precious person,
+                and someone worth celebrating every day." ❤️
+            </p>
+
+            <h1>I LOVE YOU, NEERAJA! ❤️</h1>
+
+            <p>
+                Happy Birthday, Princess! 🎂
+                Keep shining, keep smiling, and never forget
+                how special you are. 💖
+            </p>
+
+            <div style="font-size:45px">💗 💕 💘 💞 💗</div>
+        </div>
+    </div>
+
+    <button onclick="goToPage(4)">⬅ Previous</button>
+    <button onclick="goToPage(1)">Start Again 🏠</button>
+</section>
+
+<!-- NAVIGATION -->
+<nav class="navigation">
+    <button onclick="goToPage(1)">🏠 Home</button>
+    <button onclick="goToPage(2)">💖 Quotes</button>
+    <button onclick="goToPage(3)">💌 Letter</button>
+    <button onclick="goToPage(4)">✨ Forever</button>
+    <button onclick="goToPage(5)">🎁 Surprise</button>
+</nav>
+
+<script>
+function goToPage(number) {
+    document.querySelectorAll(".page").forEach(page => {
+        page.classList.remove("active");
+    });
+
+    document.getElementById("page" + number).classList.add("active");
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+function revealSurprise() {
+    document.getElementById("surprise").style.display = "block";
+
+    // Celebrate with a burst of hearts!
+    for (let i = 0; i < 35; i++) {
+        setTimeout(createHeart, i * 65);
+    }
+}
+
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "floating";
+
+    const symbols = [
+        "❤️", "💖", "💕", "💗", "💘",
+        "💝", "💞", "🌸", "✨"
+    ];
+
+    heart.textContent =
+        symbols[Math.floor(Math.random() * symbols.length)];
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (18 + Math.random() * 26) + "px";
+    heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 11000);
+}
+
+// Continuously floating love symbols
+setInterval(createHeart, 500);
+
+// Welcome animation
+for (let i = 0; i < 15; i++) {
+    setTimeout(createHeart, i * 200);
+}
+</script>
+
+</body>
+</html>
